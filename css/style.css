@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* head */
+#head{
+    height: 74px;
+}
+.nav-link{
+    color: black!important;
+}
+/* .custom-toggler{
+    position: relative;
+} */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(213,21,34,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler{
+    outline: none;
+    border: none;
+}
+.delete{
+    position:absolute;
+    top: 12px;
+    left: 17px;
+    font-size: 1.3em;
+    z-index: 5;
+    color:rgba(213,21,34,1);
+}
+#infoCity{
+    width: 130px;
+}
+.street{
+    display: none;
+}
+.hidden{
+    opacity: 0;
+}
+.shadowDropDown{
+    box-shadow: none;
+}
+.footer{
+    height: 500px;
+    background-color: rgba(33,31,42,1);
+    min-width: 75%;
+    position : absolute;
+    top: 250px;
+    z-index: 8;
+    color:white;
+}
+
+
+/* /head */
+/* banner */
+#sectionBan{
+    height: 507px;
+    width: 100%;
+}
+.banner{
+    background-image: url(../img/banner.png);
+    background-position-x: -240px;
+}
+.bannerFilter{
+    background-image: url(../img/filter.png);
+}
+.bannerHeader{
+    font-family: 'Ubuntu';
+    font-size: 40px;
+    line-height:46px;
+}
+.bannerDescriptions, .bannerHeader{
+    width: 570px;
+}
+.bannerFilter>div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/* /banner */
+/* carousel */
+.headerNews{
+    font: 34px sans-serif ;
+    padding-top: 40px;
+}
+#carouselNews{
+    height: 400px;
+}
+.carousel-indicators{
+    bottom: -15%;
+}
+.carousel-indicators> li > div{
+    width: 12px;
+    height: 12px;
+}
+.carousel-inner>.carousel-item, .carousel-inner>.carousel-item .card, .colorDivLeft, .colorDivRight, .carousel-caption {
+    height: 240px ;
+}
+.carousel-inner>.carousel-item .card, .colorDivLeft, .colorDivRight{
+    padding: 0;
+    width: 340px;
+}
+.carousel-inner{
+    width: 98%;
+    z-index:4;
+}
+.carousel-inner .card p{
+    font: 14px 'Ubuntu';
+}
+.carousel-inner .card h4{
+    font: 18px 'Ubuntu';
+}
+.colorDivRight, .colorDivLeft, .btnNews{
+    position: absolute;
+}
+.colorDivRight, .colorDivLeft{
+    z-index: 1;
+}
+.colorDivRight{
+    right: -1%;
+    bottom: -5%;
+    background: #6F61A0;
+}
+.colorDivLeft{
+    left: 0%;
+}
+.btnNews{
+    width: 156px;
+    height: 44px;
+    bottom: 10%;
+}
+.carousel-caption{
+    top: 0;
+    left: 0;
+}
+.carousel-inner .card:nth-child(3n+3){
+    margin-right: 0!important;
+}
+/* /carousel */
+/* footer */
+footer{
+    background: #211F2B;
+    height: 163px;
+}
+
+footer img{
+    position:absolute;
+    left: 10%;
+    width: 103px;
+    height: 77px;
+}
+
+#footer a{
+    text-decoration: none;
+}
+/* /footer */
+
+
+@media all and (max-width: 991px){
+    #head{
+        height: 55px;
+        background: #f6f6f6;
+    }
+    .navbar-nav{
+        z-index:4;
+    }
+    .navbar>div{
+        max-width: 100%!important;
+    }
+    .navbar>div, .navbar{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-toggler{
+        order: -1;
+    }
+    .shadowDropDown{
+        box-shadow: 0px 5px 16px rgba(90, 90, 90, 0.25);
+    }  
+    .filterBanner{
+        top: 55px;    
+    }
+}
