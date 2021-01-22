@@ -67,9 +67,5 @@ const hiddenHamburger = () => {
     
 }
 
-const lightIndicatorCarousel = () => {
-    const activeIndicator = carouselNews.querySelector('.carousel-indicators');
-    console.log(activeIndicator);
-}
- window.onload = lightIndicatorCarousel();
+
 
